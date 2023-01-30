@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230130022029">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230130154550">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +17,14 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
-					<a href="#" class="header__logo"><img src="img/header/logo.svg" alt="logo"></a>
+					<a href="home.html" class="header__logo"><img src="img/header/logo.svg" alt="logo"></a>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" class="menu__link">Service</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Service</a></li>
+							<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
 						</ul>
 					</nav>
-					<button type="button" class="menu__button button">Contact Us</button>
+					<button data-popup="#popup" type="button" class="menu__button button">Contact Us</button>
 				</div>
 			</div>
 		</header>
@@ -46,10 +46,10 @@
 						</div>
 						<form action="GET" class="about-us__form">
 							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Your Email" class="about-us__input input">
-							<button type="submit" class="about-us__button button"> Contact Us</button>
+							<button type="button" data-popup="#popup" class="about-us__button button"> Contact Us</button>
 						</form>
 					</div>
-					<div class="about-us__media"><picture><source srcset="img/about-us/man-in-hood.webp" type="image/webp"><img src="img/about-us/man-in-hood.jpg" alt="Man in Hood"></picture></div>
+					<div class="about-us__media-ibg"><picture><source srcset="img/about-us/man-in-hood.webp" type="image/webp"><img src="img/about-us/man-in-hood.jpg" alt="Man in Hood"></picture></div>
 				</div>
 			</section>
 			<!--! SECTION 2 - problems -->
@@ -144,19 +144,19 @@
 			<div class="page__ready ready">
 				<div class="ready__title title">Ready to <span>step out</span> of your R&D comfort zone?</div>
 				<div class="ready__actions">
-					<a href="#" class="ready__contact">CONTACT US NOW</a>
-					<a href="#" class="ready__explore">EXPLORE SERVICES</a>
+					<button type="button" data-popup="#popup" class="ready__contact">CONTACT US NOW</button>
+					<a href="services.html" class="ready__explore">EXPLORE SERVICES</a>
 				</div>
 			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<a href="#" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"></a>
+				<a href="home.html" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"></a>
 				<div class="footer__title">Copyright 2023 NETWEAVER LTD company. All rights reserved</div>
 				<div class="footer__content">
 					<div class="footer__actions">
-						<a href="#" class="footer__link">Service</a>
-						<a href="#" class="footer__link">Blog</a>
+						<a href="services.html" class="footer__link">Service</a>
+						<a href="blog.html" class="footer__link">Blog</a>
 					</div>
 					<ul class="footer__socials social-footer">
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
@@ -173,7 +173,35 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230130022029"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<h2 class="popup__title">
+					Ready to <span>step out</span> of your R&D comfort zone?
+				</h2>
+				<h4 class="popup__subtitle">Get Investor Data Now</h4>
+				<form class="popup__form" action="#" method="GET">
+					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Name" class="popup__input input">
+					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Email" class="popup__input input">
+					<input data-placeholder-nohide type="text" name="form[email]" data-error="Error" placeholder="Your phone number or Skype" class="popup__input input popup__input--full">
+					<textarea data-placeholder-nohide class="popup__textarea textarea" placeholder="Message"></textarea>
+					<button type="submit" class="popup__button button">Submit</button>
+				</form>
+				<div class="popup__exp-text">
+					<p>RevenueMates is a team of experts in lead research and demand generation with more then 7 years of
+						commercial experience.
+					</p>
+				</div>
+				<div class="popup__text">
+					<p>Contact us now. We'll ask questions about your business, your goals and fundraising plans. We start our
+						partnerships with a feasibility study to develop a strategy and clear recommendations.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230130154550"></script>
 </body>
 
 </html>
