@@ -1,182 +1,266 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>HomePage</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230201223449">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «revenue-mates»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «revenue-mates»</h1>
-		<div class="rootpage__info">
-			Опис проєкту
-		</div>
-		<h2>Готові сторінки:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Головна</a></li>
-			<li><a target="_blank" href="blog.html">Блог</a></li>
-			<li><a target="_blank" href="blog-item.html">Стаття</a></li>
-			<li><a target="_blank" href="services.html">Сервіс</a></li>
-			<li><a target="_blank" href="faq.html">faq</a></li>
-		</ol>
-		<h2>Попапи:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#popup">попап</a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Дякую за замовлення!</h2>
-			<p>Буду радий (да) гарному відгуку.</p>
-			<p>Звертайтесь ще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мої контакти:</h2>
-			<p>Телеграм: <a href="https://t.me/DsrEgl">Telegram</a></p>
-			<p>Вайбер: +380634861535</p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="index.html" class="header__logo"><img src="img/header/logo.svg" alt="logo"><img src="img/header/logo-text.svg" alt="Revenue Mates"></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item menu__item--burger"><a href="index.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+						</ul>
+						<ul class="menu__socials social-menu">
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#facebook"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#twitter"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#mail"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#skype"></use>
+									</svg></a></li>
+						</ul>
+					</nav>
+					<button data-popup="#popup" type="button" class="menu__button button">Contact Us</button>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+			<button data-popup="#popup" type="button" class="header__question-box"><svg>
+					<use xlink:href="img/icons/icons.svg#question-box"></use>
+				</svg></button>
+		</header>
+
+
+		<main class="page">
+			<!--! SECTION 1 - about-us -->
+			<section class="page__about-us about-us">
+				<div class="about-us__container">
+					<div class="about-us__content">
+						<div class="about-us__title">Here at <span>RevenueMates</span> we don’t beat around the bush</div>
+						<div class="about-us__subtitle">We're not going to
+							sell
+							you a magic pill or some AI automatic lead generation software</div>
+						<div class="about-us__text">
+							<p>If you want to waste time
+								talking
+								to dozens of salespeople, account managers, marketers, and get the bare minimum - you better
+								contact any other lead gen firm.
+							</p>
+						</div>
+						<form action="GET" class="about-us__form">
+							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Your Email" class="about-us__input input">
+							<button type="button" data-popup="#popup-finish" class="about-us__button button"> Contact
+								Us</button>
+						</form>
+					</div>
+					<div class="about-us__media-ibg"><picture><source srcset="img/about-us/man-in-hood.webp" type="image/webp"><img src="img/about-us/man-in-hood.jpg" alt="Man in Hood"></picture></div>
+				</div>
+			</section>
+			<!--! SECTION 2 - problems -->
+			<section class="page__problems problems">
+				<div class="problems__container">
+					<div class="problems__columns">
+						<div class="problems__media-ibg"><picture><source srcset="img/problems/man-in-long-hood.webp" type="image/webp"><img src="img/problems/man-in-long-hood.jpg" alt="man in long hood"></picture>
+						</div>
+						<div class="problems__content content-problems">
+							<div class="content-problems__title">We know your problems</div>
+							<ul class="content-problems__list">
+								<li class="content-problems__item"><picture><source srcset="img/problems/dollar.webp" type="image/webp"><img src="img/problems/dollar.jpg" alt="dollar"></picture>
+									<p>You have no capital for your start-up and tired of self-funding;</p>
+								</li>
+								<li class="content-problems__item"><picture><source srcset="img/problems/graph-down.webp" type="image/webp"><img src="img/problems/graph-down.jpg" alt="graph down"></picture>
+									<p>You took 10k from 10 different angel investors and didn’t get anywhere;</p>
+								</li>
+								<li class="content-problems__item"><picture><source srcset="img/problems/book-hand.webp" type="image/webp"><img src="img/problems/book-hand.jpg" alt="book hand"></picture>
+									<p>You are focused on product only and know nothing about BizDev or lead generation;
+									</p>
+								</li>
+								<li class="content-problems__item"><svg>
+										<use xlink:href="img/icons/icons.svg#investor"></use>
+									</svg>
+									<p>You tried looking for investors “your way” but failed miserably;
+									</p>
+								</li>
+								<li class="content-problems__item"><svg>
+										<use xlink:href="img/icons/icons.svg#coins-hand"></use>
+									</svg>
+									<p>You are contemplating if your start-up is even worth it, and looking for a 9-5 job;
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="problems__title">Are we wrong?</div>
+					<div class="problems__subtitle">If we are, you wouldn't have been here in the first place</div>
+				</div>
+			</section>
+			<!--! SECTION 3 - guarantee -->
+			<section class="page__guarantee guarantee">
+				<div class="guarantee__container">
+					<div class="guarantee__content">
+						<div class="guarantee__title">But, there is hope for you too</div>
+						<div class="guarantee__subtitle">If we are, you wouldn't have been here in the first place.
+						</div>
+						<div class="guarantee__label guarantee__label--first">We DON’T guarantee: </div>
+						<ul class="guarantee__dont-list list-dont-guar">
+							<li class="list-dont-guar__item"><svg>
+									<use xlink:href="img/icons/icons.svg#graph-up"></use>
+								</svg>
+								<p>results;</p>
+							</li>
+							<li class="list-dont-guar__item"><svg>
+									<use xlink:href="img/icons/icons.svg#cashback"></use>
+								</svg>
+								<p>investment;</p>
+							</li>
+							<li class="list-dont-guar__item"><picture><source srcset="img/guarantee/graphic-schedule.webp" type="image/webp"><img src="img/guarantee/graphic-schedule.jpg" alt="graph schedule"></picture>
+								<p>scheduled pitches;</p>
+							</li>
+						</ul>
+						<div class="guarantee__label guarantee__label--last">We DO guarantee: </div>
+						<ul class="guarantee__do do-guarantee">
+							<li class="do-guarantee__item"><svg>
+									<use xlink:href="img/icons/icons.svg#investor"></use>
+								</svg>
+								<p>huge databases of VCs/angel investors;</p>
+							</li>
+							<li class="do-guarantee__item"><picture><source srcset="img/guarantee/book.webp" type="image/webp"><img src="img/guarantee/book.jpg" alt="book"></picture>
+								<p>verified full data for each investor, including contact info and investment history;</p>
+							</li>
+							<li class="do-guarantee__item"><picture><source srcset="img/guarantee/contacts.webp" type="image/webp"><img src="img/guarantee/contacts.jpg" alt="contacts"></picture>
+								<p>tailored contact lists according to your goals;</p>
+							</li>
+							<li class="do-guarantee__item"><picture><source srcset="img/guarantee/database.webp" type="image/webp"><img src="img/guarantee/database.jpg" alt="database"></picture>
+								<p>ongoing database updates and enrichment; </p>
+							</li>
+							<li class="do-guarantee__item"><svg>
+									<use xlink:href="img/icons/icons.svg#best-price"></use>
+								</svg>
+								<p>best price on the market;</p>
+							</li>
+							<li class="do-guarantee__item"><picture><source srcset="img/guarantee/shuttle.webp" type="image/webp"><img src="img/guarantee/shuttle.jpg" alt="database"></picture>
+								<p>additional services that take your start-up from solid idea to
+									revenue;</p>
+							</li>
+						</ul>
+					</div>
+					<div class="guarantee__media-ibg"><picture><source srcset="img/guarantee/man-in-cape.webp" type="image/webp"><img src="img/guarantee/man-in-cape.jpg" alt="man in cape"></picture></div>
+				</div>
+			</section>
+			<!--! SECTION 4 - ready -->
+			<div class="page__ready ready">
+				<div class="ready__title title">Ready to <span>step out</span> of your R&D comfort zone?</div>
+				<div class="ready__actions">
+					<button type="button" data-popup="#popup" class="ready__contact">CONTACT US NOW</button>
+					<a href="services.html" class="ready__explore">EXPLORE SERVICES</a>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="index.html" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"><img src="img/footer/logo-text.svg" alt="Revenue Mates"></a>
+				<div class="footer__title">Copyright 2023 RevenueMates company. All rights reserved</div>
+				<div class="footer__content">
+					<div class="footer__actions">
+						<a href="services.html" class="footer__link">Service</a>
+						<a href="blog.html" class="footer__link">Blog</a>
+					</div>
+					<ul class="footer__socials social-footer">
+						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#facebook"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#skype"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="mailto:test@gmail.com" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#mail"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#twitter"></use>
+								</svg></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<h2 class="popup__title">
+					Ready to <span>step out</span> of your R&D comfort zone?
+				</h2>
+				<h4 class="popup__subtitle">Get Investor Data Now</h4>
+				<form class="popup__form" action="files/sendmail/sendmail.php" method="POST">
+					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Name" class="popup__input input">
+					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Email" class="popup__input input">
+					<input data-placeholder-nohide type="text" name="form[email]" data-error="Error" placeholder="Your phone number or Skype" class="popup__input input popup__input--full">
+					<textarea data-placeholder-nohide class="popup__textarea textarea" placeholder="Message"></textarea>
+					<button type="submit" data-popup="#popup-finish" class="popup__button button">Submit</button>
+				</form>
+				<div class="popup__exp-text">
+					<p>RevenueMates is a team of experts in lead research and demand generation with more then 7 years of
+						commercial experience.
+					</p>
+				</div>
+				<div class="popup__text">
+					<p>Contact us now. We'll ask questions about your business, your goals and fundraising plans. We start our
+						partnerships with a feasibility study to develop a strategy and clear recommendations.
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<div id="popup-finish" aria-hidden="true" class="finish__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__exp-text">
+					<p>Thank you, you will be contacted by our representative within the next 24 hours.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-thank" aria-hidden="true" class="thank__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__exp-text">
+					<p>Thank you.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230201223449"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
