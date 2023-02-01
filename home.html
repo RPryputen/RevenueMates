@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230130154550">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230201172029">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,28 +17,47 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
-					<a href="home.html" class="header__logo"><img src="img/header/logo.svg" alt="logo"></a>
+					<a href="home.html" class="header__logo"><img src="img/header/logo.svg" alt="logo"><img src="img/header/logo-text.svg" alt="Revenue Mates"></a>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="services.html" class="menu__link">Service</a></li>
+							<li class="menu__item menu__item--burger"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
 							<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+						</ul>
+						<ul class="menu__socials social-menu">
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#facebook"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#telegram"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#twitter"></use>
+									</svg></a></li>
 						</ul>
 					</nav>
 					<button data-popup="#popup" type="button" class="menu__button button">Contact Us</button>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
+			<button data-popup="#popup" type="button" class="header__question-box"><svg>
+					<use xlink:href="img/icons/icons.svg#question-box"></use>
+				</svg></button>
 		</header>
+
+
 		<main class="page">
 			<!--! SECTION 1 - about-us -->
 			<section class="page__about-us about-us">
 				<div class="about-us__container">
 					<div class="about-us__content">
 						<div class="about-us__title">Here at <span>RevenueMates</span> we don’t beat around the bush</div>
-						<div class="about-us__subtitle">We don’t sell dreams or give any false expectations</div>
+						<div class="about-us__subtitle">We're not going to
+							sell
+							you a magic pill or some AI automatic lead generation software</div>
 						<div class="about-us__text">
-							<p>We aren't going to promise you the world and then leave you high and dry. We're not going to
-								sell
-								you a magic pill or some AI automatic lead generation software. If you want to waste time
+							<p>If you want to waste time
 								talking
 								to dozens of salespeople, account managers, marketers, and get the bare minimum - you better
 								contact any other lead gen firm.
@@ -46,7 +65,8 @@
 						</div>
 						<form action="GET" class="about-us__form">
 							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Your Email" class="about-us__input input">
-							<button type="button" data-popup="#popup" class="about-us__button button"> Contact Us</button>
+							<button type="button" data-popup="#popup-finish" class="about-us__button button"> Contact
+								Us</button>
 						</form>
 					</div>
 					<div class="about-us__media-ibg"><picture><source srcset="img/about-us/man-in-hood.webp" type="image/webp"><img src="img/about-us/man-in-hood.jpg" alt="Man in Hood"></picture></div>
@@ -56,7 +76,7 @@
 			<section class="page__problems problems">
 				<div class="problems__container">
 					<div class="problems__columns">
-						<div class="problems__media"><picture><source srcset="img/problems/man-in-long-hood.webp" type="image/webp"><img src="img/problems/man-in-long-hood.jpg" alt="man in long hood"></picture>
+						<div class="problems__media-ibg"><picture><source srcset="img/problems/man-in-long-hood.webp" type="image/webp"><img src="img/problems/man-in-long-hood.jpg" alt="man in long hood"></picture>
 						</div>
 						<div class="problems__content content-problems">
 							<div class="content-problems__title">We know your problems</div>
@@ -132,12 +152,15 @@
 							<li class="do-guarantee__item"><svg>
 									<use xlink:href="img/icons/icons.svg#best-price"></use>
 								</svg>
-								<p>best price on the market;<br>additional services that take your start-up from solid idea to
+								<p>best price on the market;</p>
+							</li>
+							<li class="do-guarantee__item"><picture><source srcset="img/guarantee/shuttle.webp" type="image/webp"><img src="img/guarantee/shuttle.jpg" alt="database"></picture>
+								<p>additional services that take your start-up from solid idea to
 									revenue;</p>
 							</li>
 						</ul>
 					</div>
-					<div class="guarantee__media"><picture><source srcset="img/guarantee/man-in-cape.webp" type="image/webp"><img src="img/guarantee/man-in-cape.jpg" alt="man in cape"></picture></div>
+					<div class="guarantee__media-ibg"><picture><source srcset="img/guarantee/man-in-cape.webp" type="image/webp"><img src="img/guarantee/man-in-cape.jpg" alt="man in cape"></picture></div>
 				</div>
 			</section>
 			<!--! SECTION 4 - ready -->
@@ -151,8 +174,8 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<a href="home.html" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"></a>
-				<div class="footer__title">Copyright 2023 NETWEAVER LTD company. All rights reserved</div>
+				<a href="home.html" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"><img src="img/footer/logo-text.svg" alt="Revenue Mates"></a>
+				<div class="footer__title">Copyright 2023 RevenueMates company. All rights reserved</div>
 				<div class="footer__content">
 					<div class="footer__actions">
 						<a href="services.html" class="footer__link">Service</a>
@@ -163,7 +186,13 @@
 									<use xlink:href="img/icons/icons.svg#facebook"></use>
 								</svg></a></li>
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
-									<use xlink:href="img/icons/icons.svg#telegram"></use>
+									<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#skype"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="mailto:test@gmail.com" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#mail"></use>
 								</svg></a></li>
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
 									<use xlink:href="img/icons/icons.svg#twitter"></use>
@@ -181,12 +210,12 @@
 					Ready to <span>step out</span> of your R&D comfort zone?
 				</h2>
 				<h4 class="popup__subtitle">Get Investor Data Now</h4>
-				<form class="popup__form" action="#" method="GET">
+				<form class="popup__form" action="files/sendmail/sendmail.php" method="POST">
 					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Name" class="popup__input input">
 					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Email" class="popup__input input">
 					<input data-placeholder-nohide type="text" name="form[email]" data-error="Error" placeholder="Your phone number or Skype" class="popup__input input popup__input--full">
 					<textarea data-placeholder-nohide class="popup__textarea textarea" placeholder="Message"></textarea>
-					<button type="submit" class="popup__button button">Submit</button>
+					<button type="submit" data-popup="#popup-finish" class="popup__button button">Submit</button>
 				</form>
 				<div class="popup__exp-text">
 					<p>RevenueMates is a team of experts in lead research and demand generation with more then 7 years of
@@ -201,7 +230,31 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230130154550"></script>
+
+	<div id="popup-finish" aria-hidden="true" class="finish__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__exp-text">
+					<p>Thank you, you will be contacted by our representative within the next 24 hours.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-thank" aria-hidden="true" class="thank__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__exp-text">
+					<p>Thank you.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230201172029"></script>
 </body>
 
 </html>

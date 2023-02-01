@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230130154550">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230201172029">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +17,36 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
-					<a href="home.html" class="header__logo"><img src="img/header/logo.svg" alt="logo"></a>
+					<a href="home.html" class="header__logo"><img src="img/header/logo.svg" alt="logo"><img src="img/header/logo-text.svg" alt="Revenue Mates"></a>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="services.html" class="menu__link">Service</a></li>
+							<li class="menu__item menu__item--burger"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
 							<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+						</ul>
+						<ul class="menu__socials social-menu">
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#facebook"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#telegram"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#twitter"></use>
+									</svg></a></li>
 						</ul>
 					</nav>
 					<button data-popup="#popup" type="button" class="menu__button button">Contact Us</button>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
+			<button data-popup="#popup" type="button" class="header__question-box"><svg>
+					<use xlink:href="img/icons/icons.svg#question-box"></use>
+				</svg></button>
 		</header>
+
+
 		<main class="page">
 			<div class="page__breadcrumbs breadcrumbs">
 				<div class="breadcrumbs__container">
@@ -55,12 +74,7 @@
 									<div class="tabs__column">
 										<h2 class="tabs__subtitle tabs__subtitle--first">App Store Optimization (ASO)</h2>
 										<div class="tabs__text">
-											<p>If you want to win in the mobile app market, you need to stand out from the crowd.
-												Get
-												noticed by driving traffic with App Store Optimization (ASO). RevenueMates looks at
-												your competitor's ranking, reviews and ratings as well as competitors' keywords and
-												metadata to make your app look as appealing as possible. Create a killer title,
-												description, screenshots and more to generate more downloads and grow your business.
+											<p>If you want to win in the mobile app market, you need to stand out from the crowd. Get noticed by driving traffic with App Store Optimization (ASO). RevenueMates looks at your competitor's ranking, reviews and ratings as well as competitors' keywords and metadata to make your app look as appealing as possible. Create a killer title, description, screenshots and more to generate more downloads and grow your business.
 											</p>
 										</div>
 									</div>
@@ -72,13 +86,7 @@
 									<div class="tabs__column">
 										<h2 class="tabs__subtitle tabs__subtitle--second">Sales Development</h2>
 										<div class="tabs__text">
-											<p>Are you a startup founder looking to raise capital? Or perhaps you're an established
-												company looking to expand, but finding it hard to get new leads? At RevenueMates, we
-												understand that this is a common pain for all. Our team of experts has spent
-												countless hours researching and verifying the contact information so you don't have
-												to! With this information, you can confidently reach out to the right person at the
-												right time with a pitch that will knock their socks off, or get a customer that buys
-												your product right after the first demo!
+											<p>Unlike other lead generation firms, we don't offer appointment setting services, because we know - you don't want another appointment, you want to make money. We also know that you don't have time for any distractions - including unreliable leads and ineffective sales strategies. We're honest people who want to help your business grow. We know that sales development isn't just about getting a bunch of leads—it's about using those leads to turn them into customers and making sure they have an amazing experience with your brand. If you're looking for a long-term business partner who can truly work towards your goals, then look no further: we've got you covered.
 											</p>
 										</div>
 									</div>
@@ -90,13 +98,7 @@
 									<div class="tabs__column">
 										<h2 class="tabs__subtitle tabs__subtitle--third">Lead Research</h2>
 										<div class="tabs__text">
-											<p>Are you a startup founder looking to raise capital? Or perhaps you're an established
-												company looking to expand, but finding it hard to get new leads? At RevenueMates, we
-												understand that this is a common pain for all. Our team of experts has spent
-												countless hours researching and verifying the contact information so you don't have
-												to! With this information, you can confidently reach out to the right person at the
-												right time with a pitch that will knock their socks off, or get a customer that buys
-												your product right after the first demo!
+											<p>Are you a startup founder looking to raise capital? Or perhaps you're an established company looking to expand, but finding it hard to get new leads? At RevenueMates, we understand that this is a common pain for all. Our team of experts has spent countless hours researching and verifying the contact information so you don't have to! With this information, you can confidently reach out to the right person at the right time with a pitch that will knock their socks off, or get a customer that buys your product right after the first demo!
 											</p>
 										</div>
 									</div>
@@ -109,13 +111,9 @@
 									<div class="tabs__column">
 										<h2 class="tabs__subtitle tabs__subtitle--fourth">Social Engineering (White Hat)</h2>
 										<div class="tabs__text">
-											<p>Are you a startup founder looking to raise capital? Or perhaps you're an established
-												company looking to expand, but finding it hard to get new leads? At RevenueMates, we
-												understand that this is a common pain for all. Our team of experts has spent
-												countless hours researching and verifying the contact information so you don't have
-												to! With this information, you can confidently reach out to the right person at the
-												right time with a pitch that will knock their socks off, or get a customer that buys
-												your product right after the first demo!
+											<p>White Hat social engineering is a legitimate and lawful method of penetration testing and security assessments. It involves creating false identities, scenarios, or situations in order to trick individuals into providing sensitive information or access to a system or network. It's also important to keep in mind that there are many different types of social engineering attacks, including phishing, vishing (voice over IP), smishing (SMS), whaling (targeting high-level executives), and spear phishing, pretexting, among others.
+												When you're using white hat social engineering, it's important to follow the laws and regulations that apply in your area.
+
 											</p>
 										</div>
 									</div>
@@ -128,13 +126,7 @@
 									<div class="tabs__column">
 										<h2 class="tabs__subtitle tabs__subtitle--fifth">Affiliate Marketing</h2>
 										<div class="tabs__text">
-											<p>Are you a startup founder looking to raise capital? Or perhaps you're an established
-												company looking to expand, but finding it hard to get new leads? At RevenueMates, we
-												understand that this is a common pain for all. Our team of experts has spent
-												countless hours researching and verifying the contact information so you don't have
-												to! With this information, you can confidently reach out to the right person at the
-												right time with a pitch that will knock their socks off, or get a customer that buys
-												your product right after the first demo!
+											<p>Have a product or service that needs traffic? RevenueMates is your trusted partner in lead generation and performance marketing. We offer various performance marketing and affiliation services for fast-paced start-ups and established companies in emerging and established markets. We know how to work with all countries, regions, have vast expertise and deliver results that speak for themselves. Rethink “Monetization” and “Traffic” with RevenueMates.
 											</p>
 										</div>
 									</div>
@@ -143,14 +135,15 @@
 							</div>
 						</div>
 					</div>
-					<button type="button" class="services__button button">Contact Us</button>
+					<h3 class="services__btn-title">Still have questions? Talk to us!</h3>
+					<button data-popup="#popup" type="button" class="services__button button">Contact Us</button>
 				</div>
 			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<a href="home.html" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"></a>
-				<div class="footer__title">Copyright 2023 NETWEAVER LTD company. All rights reserved</div>
+				<a href="home.html" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"><img src="img/footer/logo-text.svg" alt="Revenue Mates"></a>
+				<div class="footer__title">Copyright 2023 RevenueMates company. All rights reserved</div>
 				<div class="footer__content">
 					<div class="footer__actions">
 						<a href="services.html" class="footer__link">Service</a>
@@ -161,7 +154,13 @@
 									<use xlink:href="img/icons/icons.svg#facebook"></use>
 								</svg></a></li>
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
-									<use xlink:href="img/icons/icons.svg#telegram"></use>
+									<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#skype"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="mailto:test@gmail.com" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#mail"></use>
 								</svg></a></li>
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
 									<use xlink:href="img/icons/icons.svg#twitter"></use>
@@ -171,7 +170,59 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230130154550"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<h2 class="popup__title">
+					Ready to <span>step out</span> of your R&D comfort zone?
+				</h2>
+				<h4 class="popup__subtitle">Get Investor Data Now</h4>
+				<form class="popup__form" action="files/sendmail/sendmail.php" method="POST">
+					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Name" class="popup__input input">
+					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Email" class="popup__input input">
+					<input data-placeholder-nohide type="text" name="form[email]" data-error="Error" placeholder="Your phone number or Skype" class="popup__input input popup__input--full">
+					<textarea data-placeholder-nohide class="popup__textarea textarea" placeholder="Message"></textarea>
+					<button type="submit" data-popup="#popup-finish" class="popup__button button">Submit</button>
+				</form>
+				<div class="popup__exp-text">
+					<p>RevenueMates is a team of experts in lead research and demand generation with more then 7 years of
+						commercial experience.
+					</p>
+				</div>
+				<div class="popup__text">
+					<p>Contact us now. We'll ask questions about your business, your goals and fundraising plans. We start our
+						partnerships with a feasibility study to develop a strategy and clear recommendations.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-finish" aria-hidden="true" class="finish__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__exp-text">
+					<p>Thank you, you will be contacted by our representative within the next 24 hours.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-thank" aria-hidden="true" class="thank__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__exp-text">
+					<p>Thank you.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230201172029"></script>
 </body>
 
 </html>

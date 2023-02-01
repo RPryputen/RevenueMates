@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230130154550">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230201172029">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +17,36 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
-					<a href="home.html" class="header__logo"><img src="img/header/logo.svg" alt="logo"></a>
+					<a href="home.html" class="header__logo"><img src="img/header/logo.svg" alt="logo"><img src="img/header/logo-text.svg" alt="Revenue Mates"></a>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="services.html" class="menu__link">Service</a></li>
+							<li class="menu__item menu__item--burger"><a href="home.html" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
 							<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+						</ul>
+						<ul class="menu__socials social-menu">
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#facebook"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#telegram"></use>
+									</svg></a></li>
+							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+										<use xlink:href="img/icons/icons.svg#twitter"></use>
+									</svg></a></li>
 						</ul>
 					</nav>
 					<button data-popup="#popup" type="button" class="menu__button button">Contact Us</button>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
+			<button data-popup="#popup" type="button" class="header__question-box"><svg>
+					<use xlink:href="img/icons/icons.svg#question-box"></use>
+				</svg></button>
 		</header>
+
+
 		<main class="page">
 			<div class="page__breadcrumbs breadcrumbs">
 				<div class="breadcrumbs__container">
@@ -42,49 +61,75 @@
 					<h1 class="faq__title">FAQ</h1>
 					<div data-spollers class="spollers">
 						<div class="spollers__item">
-							<button type="button" data-spoller class="spollers__title">1. What is RevenueMates</button>
-							<div class="spollers__body">RevenueMates is a company that provides comprehensive services to help
-								businesses increase their sales and revenue. We do this through our lead generation and
-								performance marketing services.
+							<button type="button" data-spoller class="spollers__title">1. What is RevenueMates?</button>
+							<div class="spollers__body">
+								<p>RevenueMates is a company that provides comprehensive services to help
+									businesses increase their sales and revenue. We do this through our lead generation and
+									performance marketing services.</p>
 							</div>
 						</div>
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">2. What services do you offer?</button>
-							<div class="spollers__body">Контент спойлера</div>
+							<div class="spollers__body">
+								<p>We offer our expertise in App Store Optimization (ASO), Affiliate Marketing, Sales
+									Development, Paid Ads, Social Engineering, and Lead Research services, for an amazing price.
+									We grow rapidly, and so will our prices. Contact us now to secure an amazing retainer deal.
+								</p>
+							</div>
 						</div>
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">3. Do you offer refunds?</button>
-							<div class="spollers__body">Контент спойлера</div>
+							<div class="spollers__body">
+								<p>We do not offer refunds. We believe in transparency, honesty, and clarity. We clearly outline
+									our services and pricing before any work is done, so that you know exactly what you're
+									getting into with us.</p>
+							</div>
 						</div>
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">4. How do you handle payments?</button>
-							<div class="spollers__body">Контент спойлера</div>
+							<div class="spollers__body">
+								<p>We only work on upfront payments. This means you know exactly what you're getting and how
+									much it will cost before we start working together—and it makes sure that we are not left
+									with a big bill at the end, either.</p>
+							</div>
 						</div>
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">5. Are all companies qualified to work
 								with RevenueMates?</button>
-							<div class="spollers__body">Контент спойлера</div>
+							<div class="spollers__body">
+								<p>We know the tech start-up landscape. We've seen many start-ups that are more like a fever
+									dream than an actual business plan, and we don't do business with them. If your idea isn't
+									structured enough to be taken seriously, we won't take it on.</p>
+							</div>
 						</div>
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">6. What results can I expect from
 								working with RevenueMates?</button>
-							<div class="spollers__body">Контент спойлера</div>
+							<div class="spollers__body">
+								<p>We can guarantee only two things: the quality of our work and reliable service delivery. We
+									don't help you build your product, as that is your responsibility as a founder. We help you
+									scale what you've already built, or we won't step into partnership at all.</p>
+							</div>
 						</div>
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">7. What industries do you specialize
 								in?</button>
-							<div class="spollers__body">Контент спойлера</div>
+							<div class="spollers__body">
+								<p>We are a team of forward-thinking folks who specialize in the tech industry and have a strong
+									understanding of the venture capital and angel investor landscape. We love working with
+									rapidly growing industries.</p>
+							</div>
 						</div>
 					</div>
 					<h3 class="faq__subtitle">Still have questions? Talk to us!</h3>
-					<button type="button" class="faq__button button">Contact Us</button>
+					<button data-popup="#popup" type="button" class="faq__button button">Contact Us</button>
 				</div>
 			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<a href="home.html" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"></a>
-				<div class="footer__title">Copyright 2023 NETWEAVER LTD company. All rights reserved</div>
+				<a href="home.html" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"><img src="img/footer/logo-text.svg" alt="Revenue Mates"></a>
+				<div class="footer__title">Copyright 2023 RevenueMates company. All rights reserved</div>
 				<div class="footer__content">
 					<div class="footer__actions">
 						<a href="services.html" class="footer__link">Service</a>
@@ -95,7 +140,13 @@
 									<use xlink:href="img/icons/icons.svg#facebook"></use>
 								</svg></a></li>
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
-									<use xlink:href="img/icons/icons.svg#telegram"></use>
+									<use xlink:href="img/icons/icons.svg#whatsapp"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#skype"></use>
+								</svg></a></li>
+						<li class="social-footer__item"><a href="mailto:test@gmail.com" class="social-footer__link"><svg>
+									<use xlink:href="img/icons/icons.svg#mail"></use>
 								</svg></a></li>
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
 									<use xlink:href="img/icons/icons.svg#twitter"></use>
@@ -105,7 +156,59 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230130154550"></script>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<h2 class="popup__title">
+					Ready to <span>step out</span> of your R&D comfort zone?
+				</h2>
+				<h4 class="popup__subtitle">Get Investor Data Now</h4>
+				<form class="popup__form" action="files/sendmail/sendmail.php" method="POST">
+					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Name" class="popup__input input">
+					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Email" class="popup__input input">
+					<input data-placeholder-nohide type="text" name="form[email]" data-error="Error" placeholder="Your phone number or Skype" class="popup__input input popup__input--full">
+					<textarea data-placeholder-nohide class="popup__textarea textarea" placeholder="Message"></textarea>
+					<button type="submit" data-popup="#popup-finish" class="popup__button button">Submit</button>
+				</form>
+				<div class="popup__exp-text">
+					<p>RevenueMates is a team of experts in lead research and demand generation with more then 7 years of
+						commercial experience.
+					</p>
+				</div>
+				<div class="popup__text">
+					<p>Contact us now. We'll ask questions about your business, your goals and fundraising plans. We start our
+						partnerships with a feasibility study to develop a strategy and clear recommendations.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-finish" aria-hidden="true" class="finish__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__exp-text">
+					<p>Thank you, you will be contacted by our representative within the next 24 hours.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup-thank" aria-hidden="true" class="thank__popup popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<div class="popup__exp-text">
+					<p>Thank you.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230201172029"></script>
 </body>
 
 </html>
