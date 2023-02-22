@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230201223449">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230213211448">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,25 +17,25 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__menu menu">
-					<a href="index.html" class="header__logo"><img src="img/header/logo.svg" alt="logo"><img src="img/header/logo-text.svg" alt="Revenue Mates"></a>
+					<a href="../" class="header__logo"><img src="img/header/logo.svg" alt="logo"><img src="img/header/logo-text.svg" alt="Revenue Mates"></a>
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item menu__item--burger"><a href="index.html" class="menu__link">Home</a></li>
-							<li class="menu__item"><a href="services.html" class="menu__link">Services</a></li>
-							<li class="menu__item"><a href="blog.html" class="menu__link">Blog</a></li>
-							<li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+							<li class="menu__item menu__item--burger"><a href="index" class="menu__link">Home</a></li>
+							<li class="menu__item"><a href="services" class="menu__link">Services</a></li>
+							<li class="menu__item"><a href="blog" class="menu__link">Blog</a></li>
+							<li class="menu__item"><a href="faq" class="menu__link">FAQ</a></li>
 						</ul>
 						<ul class="menu__socials social-menu">
 							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
 										<use xlink:href="img/icons/icons.svg#facebook"></use>
 									</svg></a></li>
-							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+							<li class="social-menu__item"><a href="https://wa.me/+37259328447" target="_blank" class="social-menu__link"><svg>
 										<use xlink:href="img/icons/icons.svg#whatsapp"></use>
 									</svg></a></li>
 							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
 										<use xlink:href="img/icons/icons.svg#twitter"></use>
 									</svg></a></li>
-							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
+							<li class="social-menu__item"><a href="mailto:Contact@revenuemates.com" class="social-menu__link"><svg>
 										<use xlink:href="img/icons/icons.svg#mail"></use>
 									</svg></a></li>
 							<li class="social-menu__item"><a href="#" class="social-menu__link"><svg>
@@ -57,7 +57,7 @@
 			<div class="page__breadcrumbs breadcrumbs">
 				<div class="breadcrumbs__container">
 					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">Home</a></li>
+						<li class="breadcrumbs__item"><a href="../" class="breadcrumbs__link">Home</a></li>
 						<li class="breadcrumbs__item">Services</li>
 					</ul>
 				</div>
@@ -148,24 +148,24 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<a href="index.html" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"><img src="img/footer/logo-text.svg" alt="Revenue Mates"></a>
+				<a href="../" class="footer__logo"><img src="img/footer/logo.svg" alt="logo"><img src="img/footer/logo-text.svg" alt="Revenue Mates"></a>
 				<div class="footer__title">Copyright 2023 RevenueMates company. All rights reserved</div>
 				<div class="footer__content">
 					<div class="footer__actions">
-						<a href="services.html" class="footer__link">Service</a>
-						<a href="blog.html" class="footer__link">Blog</a>
+						<a href="services" class="footer__link">Service</a>
+						<a href="blog" class="footer__link">Blog</a>
 					</div>
 					<ul class="footer__socials social-footer">
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
 									<use xlink:href="img/icons/icons.svg#facebook"></use>
 								</svg></a></li>
-						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
+						<li class="social-footer__item"><a href="https://wa.me/+37259328447" target="_blank" class="social-footer__link"><svg>
 									<use xlink:href="img/icons/icons.svg#whatsapp"></use>
 								</svg></a></li>
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
 									<use xlink:href="img/icons/icons.svg#skype"></use>
 								</svg></a></li>
-						<li class="social-footer__item"><a href="mailto:test@gmail.com" class="social-footer__link"><svg>
+						<li class="social-footer__item"><a href="mailto:Contact@revenuemates.com" class="social-footer__link"><svg>
 									<use xlink:href="img/icons/icons.svg#mail"></use>
 								</svg></a></li>
 						<li class="social-footer__item"><a href="#" class="social-footer__link"><svg>
@@ -176,6 +176,120 @@
 			</div>
 		</footer>
 	</div>
+
+	<!-- ======================================================================================================================================================== -->
+	<script>
+		function addLoadedClass() {
+			document.documentElement.classList.add('loading');
+			document.documentElement.classList.add('lock');
+			window.addEventListener("load", function() {
+				document.documentElement.classList.remove('loading');
+				document.documentElement.classList.remove('lock');
+				document.documentElement.classList.add('loaded');
+			});
+		}
+		addLoadedClass()
+	</script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.loader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			z-index: 900;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			display: grid;
+			place-items: center;
+			background: #fff;
+			transition: all 0.5s ease;
+		}
+
+		.loaded .loader {
+			pointer-events: none;
+			opacity: 0;
+		}
+
+		.loader__wrapper {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			z-index: 200;
+		}
+
+		.loader span {
+			position: absolute;
+			display: block;
+			width: 40%;
+			height: 40%;
+			border-radius: 50%;
+			animation: speed 2s infinite ease-in-out;
+		}
+
+
+		.loader__one {
+			background: #0081CF;
+			animation-delay: 1.5s;
+		}
+
+
+		.loader__two {
+			background: #FF6D03;
+			animation-delay: 1s;
+		}
+
+
+		.loader__three {
+			background: #0081CF;
+			animation-delay: 0.5s;
+		}
+
+
+		.loader__four {
+			background: #FF6D03;
+		}
+
+		@keyframes speed {
+			0% {
+				transform: translate(0%);
+				border-radius: 50%;
+			}
+
+			25% {
+				transform: translate(150%) scale(0.5);
+				border-radius: 0%;
+			}
+
+			50% {
+				transform: translate(150%, 150%);
+				border-radius: 50%;
+			}
+
+			75% {
+				transform: translate(0, 150%) scale(0.5);
+				border-radius: 0%;
+			}
+		}
+	</style>
+	<!-- ======================================================================================================================================================== -->
+	<div class="loader">
+		<div class="loader__wrapper">
+			<span style="animation-delay: 1.5s;" class="loader__one"></span>
+			<span style="animation-delay: 1s;" class="loader__two"></span>
+			<span style="animation-delay: 0.5s;" class="loader__three"></span>
+			<span style="background: #FF6D03" class="loader__four"></span>
+		</div>
+	</div>
+	<!-- ======================================================================================================================================================== -->
+
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
@@ -184,12 +298,12 @@
 					Ready to <span>step out</span> of your R&D comfort zone?
 				</h2>
 				<h4 class="popup__subtitle">Get Investor Data Now</h4>
-				<form class="popup__form" action="files/sendmail/sendmail.php" method="POST">
-					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Name" class="popup__input input">
-					<input data-placeholder-nohide autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Your Email" class="popup__input input">
-					<input data-placeholder-nohide type="text" name="form[email]" data-error="Error" placeholder="Your phone number or Skype" class="popup__input input popup__input--full">
-					<textarea data-placeholder-nohide class="popup__textarea textarea" placeholder="Message"></textarea>
-					<button type="submit" data-popup="#popup-finish" class="popup__button button">Submit</button>
+				<form class="popup__form" action="files/sendmail/sendmail.php" method="POST" data-ajax data-popup-message="#popup-finish">
+					<input data-placeholder-nohide autocomplete="off" type="text" required name="name" data-error="Error" placeholder="Your Name" class="popup__input input">
+					<input data-placeholder-nohide autocomplete="off" type="email" name="femail" required data-error="Error" placeholder="Your Email" class="popup__input input">
+					<input data-placeholder-nohide type="text" name="fphone" required data-error="Error" placeholder="Your phone number or Skype" class="popup__input input popup__input--full">
+					<textarea data-placeholder-nohide class="popup__textarea textarea" name="ftextarea" placeholder="Message"></textarea>
+					<button type="submit" class="popup__button button">Submit</button>
 				</form>
 				<div class="popup__exp-text">
 					<p>RevenueMates is a team of experts in lead research and demand generation with more then 7 years of
@@ -228,7 +342,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230201223449"></script>
+	<script src="js/app.min.js?_v=20230213211448"></script>
 </body>
 
 </html>
